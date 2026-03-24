@@ -119,6 +119,12 @@ class Ui_dialog(object):
         font.setPointSize(15)
         self.btn_pnt.setFont(font)
         self.btn_pnt.setObjectName("btn_pnt")
+        self.btn_clear = QtWidgets.QPushButton(parent=dialog)
+        self.btn_clear.setGeometry(QtCore.QRect(340, 40, 41, 41))
+        font = QtGui.QFont()
+        font.setPointSize(15)
+        self.btn_clear.setFont(font)
+        self.btn_clear.setObjectName("btn_clear")
 
         self.retranslateUi(dialog)
         QtCore.QMetaObject.connectSlotsByName(dialog)
@@ -142,3 +148,4 @@ class Ui_dialog(object):
         self.btn_div.setText(_translate("dialog", "/"))
         self.btn_res.setText(_translate("dialog", "="))
         self.btn_pnt.setText(_translate("dialog", ","))
+        self.btn_clear.setText(_translate("dialog", "C"))
